@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix Result</title>
+</head>
+<body>
+    <h1>Generated Matrices and Result of {{ operation.capitalize() }}</h1>
+
+    <!-- Display Matrix 1 as an HTML table -->
+    <h2>Matrix 1</h2>
+    <div>{{ matrix1 | safe }}</div>
+
+    <!-- Display Matrix 2 as an HTML table -->
+    <h2>Matrix 2</h2>
+    <div>{{ matrix2 | safe }}</div>
+
+    <!-- Display the result of the operation -->
+    <h2>Result</h2>
+    <div>{{ result_matrix | safe }}</div>
+
+    <a href="/">Perform Another Operation</a>
+</body>
+</html>
